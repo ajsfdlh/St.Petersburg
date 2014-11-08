@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>0</key>
+	<string>线路列表</string>
+	<key>1</key>
+	<string>景点列表</string>
+	<key>2</key>
+	<string>圣彼得堡住宿</string>
+	<key>3</key>
+	<string>圣彼得堡餐厅</string>
+	<key>4</key>
+	<string>圣彼得堡购物</string>
+	<key>5</key>
+	<string>圣彼得堡娱乐</string>
+	<key>6</key>
+	<string>圣彼得堡导游</string>
+	<key>7</key>
+	<string>圣彼得堡租车</string>
+</dict>
+</plist>

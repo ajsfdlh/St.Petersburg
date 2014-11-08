@@ -1,0 +1,189 @@
+/*body里的内容样式的控制，如果其子标签中不设置改属性，那么就按改设置内容显示*/
+body{
+    font-size:15px;
+    font-weight:normal;
+    font-family:Arial;
+    padding:0px;
+    margin:0px;
+    border:0;
+    }
+/*设置所有id为pad的div，其边界离其母标签的位置的左右距离为15个像素，其呈现的效果是除了“相关新闻”和“热门评论”两个黄色的标题以外，所有的内容显示都其左右都离屏幕边界15个像素点*/
+
+#pad{
+    margin-left:10px;
+    margin-right:10px;
+    }
+#pad1{
+    margin-left:0px;
+    margin-right:10px;
+    }
+/*设置标题div里面字体的样式，class名字为title*/
+/*设置图片div中样式，重要是让其里面的图片居中显示，class名字为pic*/
+.pic{
+    text-align:center;
+    }
+/*设置图片的大小，id名字为image*/
+#image{
+ margin-top:10px;
+ margin-bottom:10px;
+    width:300px;
+    height:200px;
+    }
+#lineImage1
+{
+
+
+    width:320px;
+    height:2025.5px;
+}
+#lineImage2
+{
+
+
+    width:320px;
+    height:1526px;
+}
+#lineImage3
+{
+
+
+    width:320px;
+    height:627.5px;
+}
+#dividImage
+{
+ margin-top:40px;
+ margin-bottom:30px;
+    width:300px;
+    height:22.5px;
+}
+#traficImage
+{
+ 
+    width:20px;
+    height:20px;
+}
+.headtitle
+{
+   margin-top:10px;
+    line-height: 25px;
+    font-weight:20;
+    font-size:15px;
+    text-indent:0em;
+
+
+ 
+    
+    font-family:"微软雅黑";
+
+
+}
+.detailHeadtitle
+{
+    margin-top:10px;
+    font-size:22px;
+    font-weight:600;
+    line-height: 25px
+
+
+    font-family:Microsoft YaHei;
+
+
+}
+.Russian
+{
+ text-align:left;
+    font-size:15px;
+    font-family:Arial;
+    color: gray;
+
+
+}
+
+
+/* padding-top:100px;margin-top:20px;两者需一起用*/
+.detailtitle
+{
+    text-align:justify;
+    font-size:16px;
+    font-weight:20;
+    text-indent:2em;
+    font-family:Arial;
+    line-height: 25px
+
+}
+.detailintroduce
+{
+ text-align:justify;
+    margin-top:10px;
+     margin-bottom:20px;
+    text-indent:2em;
+    font-family:Arial;
+    line-height: 25px;
+    font-size:16px;
+    font-weight:20;
+
+
+}
+.watchOutlintroduce
+{
+ text-align:justify;
+    margin-top:10px;
+     margin-bottom:10px;
+    font-size:16px;
+    font-weight:20;
+    font-family:Arial;
+    line-height: 25px;
+
+}
+
+.title
+{
+   font-size:14px;
+    font-weight:20;
+    font-family:Arial;
+     text-indent:2em;
+     line-height: 25px
+        font-family:"微软雅黑";
+        text-align:justify;
+   /* text-align:center;*/
+}
+.address
+{
+    text-align:justify;
+    color:gray;
+    font-size:15px;
+    font-family:Microsoft YaHei;
+    line-height: 23px;
+
+
+
+
+
+}
+.sectionDistance
+{
+  
+     margin-bottom:10px;
+
+}
+.haha1
+{
+    font-size:15px;
+    font-weight:600;
+    font-family:Arial;
+    text-indent:2em;
+    padding-top:10px;
+    margin-bottom:10px;
+}
+ .title3
+ {
+  text-align:justify;
+ margin-top:10px;
+   font-size:14px;
+    font-weight:20;
+    font-family:Arial;
+     text-indent:2em;
+     line-height: 25px
+   
+}

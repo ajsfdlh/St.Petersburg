@@ -1,0 +1,218 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+
+#define DeviceHeight [UIScreen mainScreen].bounds.size.height
+#define DeviceWidth [UIScreen mainScreen].bounds.size.width
+#import"MainTabarController.h"
+#import"Navbar.h"
+#import"HomeViewController.h"
+#import"MoreViewController.h"
+#import"MineViewController.h"
+#import"NeighboViewController.h"
+#import"ToolViewController.h"
+#import"MineDetailViewController.h"
+#import"ModificViewController.h"
+#import"MineMemberViewController.h"
+#import"CountryViewController.h"
+#import"ProvinceViewController.h"
+#import"CityViewController.h"
+#import"CustomCell.h"
+#import"Location.h"
+#import"TabViewViewController.h"
+#import"CustomCell2.h"
+#import"InfomDetailViewController.h"
+#import"DetailViewController.h"
+#import"WebView.h"
+#import"CustomCell3.h"
+#import"TelephoneViewController.h"
+#import"HTCopyableLabel.h"
+#import"TravelViewController.h"
+#import"AdviceViewController.h"
+#import"NewsCell.h"
+#import"NewsViewController.h"
+#import"SceneryViewController.h"
+#import"EmergencyViewController.h"
+#import"TextViewController.h"
+#import"MyView.h"
+#import"WeatherViewController.h"
+#import"TimeAndMoneyViewController.h"
+#import"LineViewController.h"
+#import"LineCustomCell.h"
+
+#import"HotelAndBusCell.h"
+#import"SceneryCell.h"
+#import"ComentViewController.h"
+#import"HPGrowingTextView.h"
+#import"SetViewController.h"
+
+#import"RTLabel.h"
+#import <ShareSDK/ShareSDK.h>
+#import"EntertainmentViewController.h"
+#import"EntainDetailViewController.h"
+#import"EntertainListViewController.h"
+#import"LineDetailCell.h"
+#import"EveryDayViewController.h"
+#import"FirstViewController.h"
+#import"ManageTableViewCell.h"
+#import"UserTableViewCell.h"
+#import"NumberView.h"
+#import"AppDelegate.h"
+//#import"SeceneryViewController.h"
+#import"IntroduceViewController.h"
+#import"Data.h"
+#import"QYHMeThod.h"
+#import"Reachability.h"
+#define LoadCount 30
+
+#define PartnerID @"2088011032567124"
+#define SellerID @"2088011032567124"
+#define PrivateKey @"MIICdgIBADANBgkqhkiG9w0BAQEFAASCAmAwggJcAgEAAoGBAMFdmPWMviDEVXMZO+Mh0YIf7nWr3Z/IG+sKCyzPt8SlgNe9XyZl3h3TyAnQHZhRGq+lttq+ZvjOwN1bhXsgz0e2Xs32qevSCFdhJ3aUSZrIs2CGIlj2eLmOZtSgRFs1811AsllUPc4FK6tLI0BI7Zg4OpmidqGbAGHF4xWkRcy9AgMBAAECgYBhqG7XHQTtMZtibQ0k8nCIgq4BehKNXxhShZkNQb8zLs86pmbG0s3yTIKMCjLYOaX7rfsC0QTahjk70rxAalqkoXRG3PM/9l3hVv2I1ol6ZFOgl+VlS8Ymf3hVkyQX0jcethheBwdVcmE6gwiBtSUD5NOMZtcSTldtxkryvoiRIQJBAOQ5Og+/8E9Al9hyZVtaagjbqgb2vr/QZlQ22qi0N/GX+O6AGh9dfYt3kJfBJA6iRlD9TKsvmCYpOgrz8blYLNkCQQDY5kzmEfBcYVziEjqnpkF+7Yo2ozCVeED+GbGAAfb+Otqb4YumaAKfmMOeDTw6PgI/ihP35H/5iIzEN7A9GoCFAkB2iiLWO2OeRnaYPhLXOEcLAs11gIPjLWN5KmS4a6MDIWRyvKbU08J5xkicCf2ofDD5sBc6cyYb7B3xwnMzSdFBAkEAwyYqaBIZ1bRQEqNeHLrsUNw+L7ySGNmSeEz7s/WQmdqwF/JNaJJKUffrgQfdeXWTJkIAh1gSgJwIMv771W5D1QJAFM0+8Ar5ttGdTJrJ3nIeMtOuuEVzoCcavuoeYZe4sIgp3XNistg13yAWkNCukYb1AjkYKcfNo55j690q9Arsvg=="
+#define PublicKey @"MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCnxj/9qwVfgoUh/y2W89L6BkRAFljhNhgPdyPuBV64bfQNN1PjbCzkIM6qRdKBoLPXmKKMiFYnkd6rAoprih3/PrQEB/VsW8OoM8fxn67UDYuyBTqA23MML9q1+ilIZwBC2AQ2UBVOrFXfFl75p6/B5KsiNG9zpgmLCUYuLkxpLQIDAQABMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCnxj/9qwVfgoUh/y2W89L6BkRAFljhNhgPdyPuBV64bfQNN1PjbCzkIM6qRdKBoLPXmKKMiFYnkd6rAoprih3/PrQEB/VsW8OoM8fxn67UDYuyBTqA23MML9q1+ilIZwBC2AQ2UBVOrFXfFl75p6/B5KsiNG9zpgmLCUYuLkxpLQIDAQAB"
+
+//travel
+#define BACK_IMAGE [UIImage imageNamed:@"defaultSmall.gif"]
+#define BACK_BIG_IMAGE [UIImage imageNamed:@"defaultBig.gif"]
+#define DEFAUT [NSUserDefaults standardUserDefaults]
+#define GET_USER_DEFAUT(str) [DEFAUT objectForKey:str]
+#define SET_USER_DEFAUT(object,key) [DEFAUT setObject:object forKey:key]
+#define PicUrlSeverice [NSMutableString stringWithString:@"http://t.russia-online.cn/Upload/service/"]
+#define PicUrlTravel [NSMutableString stringWithString:@"http://t.russia-online.cn/upload/travel/"]
+#define GO_NET -(void)noNet{\
+    Reachability*rea2 =[Reachability reachabilityWithHostName:@"www.baidu.com"];\
+if ([rea2  currentReachabilityStatus]==NotReachable){\
+UIAlertView*alert=[[UIAlertView alloc]initWithTitle:@"提示" message:@"网络连接失败,请在通用设置界面设置您的网络状态" delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil];\
+    [alert show];\
+}else{noNetButton.hidden=YES;}\
+}
+
+
+
+#define  GroupColor   [UIColor colorWithPatternImage:[UIImage imageNamed:@"groupTableView.png"]]
+
+#define  BlueColor   [UIColor colorWithPatternImage:[UIImage imageNamed:@"blueBackGround.png"]]
+
+
+#define  NoNetButton(noButton)  [UIButton buttonWithType:UIButtonTypeCustom];noButton.frame=CGRectMake(0, 0, 320, 40);[noButton setImage:[UIImage imageNamed:@"noNet.gif"] forState:UIControlStateNormal];noButton.hidden=YES;[noButton addTarget:self action:@selector(noNet) forControlEvents:UIControlEventTouchUpInside];[self.view addSubview:noButton]
+
+
+#define NetChange(noNetButton)    -(void)netChange:(NSNotification*)sender{ Reachability*reach=[sender object];if ([reach currentReachabilityStatus]==NotReachable){noNetButton.hidden=NO;}else{ noNetButton.hidden=YES;}}
+
+//#define  GroupColor   [UIColor colorWithPatternImage:[UIImage imageNamed:@"blueBackGround.png"]]
+#define BLUE_SKY_COLOR [UIColor colorWithRed:0 green:109/255.0 blue:184/255.0 alpha:1]
+#define BLACK_VIEW_COLOR [UIColor colorWithRed:241/255.0 green:241/255.0 blue:241/255.0 alpha:1]
+//#define BLUE_COLOR [UIColor colorWithPatternImage:[UIImage imageNamed:@"skyBlue.png"]]
+#define WriteToFile(dataContent,fileName)  [dataContent writeToFile:[[LineViewController new] filePath:fileName] atomically:YES]
+
+#define  FileExists(fileName)      [[NSFileManager defaultManager]fileExistsAtPath:[[LineViewController new] filePath:fileName]]
+#define PathOfFile(fileName)   [[LineViewController new] filePath:fileName]
+
+#define RussiaUrl [NSMutableString stringWithString:@"http://t.russia-online.cn/Service1.asmx/"];
+
+#define RussiaUrl2 [NSMutableString stringWithString:@"http://t.russia-online.cn/ListService.asmx/"];
+//#define RussiaUrl2_text [NSMutableString stringWithString:@"http://192.168.0.156:805/ListService.asmx/"];
+#define RussiaUrl3 [NSMutableString stringWithString:@"http://t.russia-online.cn/ListServicet.asmx/"]
+
+#define RussiaUrl4 [NSMutableString stringWithString:@"http://t.russia-online.cn/ListServiceg.asmx/"];
+#define RussiaUrl5 [NSMutableString stringWithString:@"http://t.russia-online.cn/OrderService.asmx/"];
+#define RussiaUrl6 [NSMutableString stringWithString:@"http://t.russia-online.cn/ListServicet.asmx/"];
+
+#define USER_NAME @"useName"
+#define QUSE_ID @"QuseID"
+#define TYPE_ID @"TypeID"
+#define GUIDE_ID @"IsGuide"
+#define MY_HEAD_IVN @"head"
+
+#define PicUrl [NSMutableString stringWithString:@"http://t.russia-online.cn/upload/"]
+#define PicUrlWWW [NSMutableString stringWithString:@"http://www.russia-online.cn/upload/"]
+#define picUrlLogin [NSMutableString stringWithString:@"http://t.russia-online.cn/Upload/"]
+#define PicUrl2 [NSMutableString stringWithString:@"http://t.russia-online.cn/upload/guide/"]
+#define LINE_VIEW_C [LineViewController new]
+
+#define navbar  self.navigationController.navigationBar.backgroundColor=[UIColor colorWithPatternImage:[UIImage imageNamed:@"top.png"]];
+
+#define   hideTabbar     MainTabarController*main=(MainTabarController*)self.tabBarController;main.customizedBar.hidden=YES;
+#define   appearTabbar     MainTabarController*main=(MainTabarController*)self.tabBarController;main.customizedBar.hidden=NO;
+
+#define backButton -(void)viewDidAppear:(BOOL)animated{ float height=35;UIButton *backbutton = [[UIButton alloc]init];backbutton.frame=CGRectMake(0, (44-height)/2, 55, height);[backbutton addTarget:self action:@selector(back) forControlEvents:UIControlEventTouchUpInside];UIImageView*imageView=[[UIImageView alloc]initWithFrame:CGRectMake(-5, 10, 15, 15)];imageView.image=[UIImage imageNamed:@"_back.png"];[backbutton addSubview:imageView];UILabel*lable=[[UILabel alloc]initWithFrame:CGRectMake(10, 0, 40, 35)]; lable.font=[UIFont systemFontOfSize:15];lable.textColor=[UIColor whiteColor];lable.text=@"返回";[backbutton addSubview:lable];UIBarButtonItem *backItem = [[UIBarButtonItem alloc] initWithCustomView:backbutton];self.navigationItem.leftBarButtonItem =backItem;}-(void)back{[self.navigationController popViewControllerAnimated:NO];}
+
+#define logUrl @"http://t.russia-online.cn/Service1.asmx/UserLogin"
+
+#define postRequestYiBu(argumentStr,urlStr)     NSURL*url=[[NSURL alloc]initWithString:urlStr]; NSMutableURLRequest *request = [[NSMutableURLRequest alloc]initWithURL:url cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:10];[request setHTTPMethod:@"POST"];NSData *data = [argumentStr dataUsingEncoding:NSUTF8StringEncoding];[request setHTTPBody:data];[NSURLConnection connectionWithRequest:request delegate:self];
+
+
+#define postRequestTongBu(argumentStr,urlStr,received)    NSURL*url=[[NSURL alloc]initWithString:urlStr]; NSMutableURLRequest *request = [[NSMutableURLRequest alloc]initWithURL:url cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:10];[request setHTTPMethod:@"POST"];NSData *data = [argumentStr dataUsingEncoding:NSUTF8StringEncoding];[request setHTTPBody:data];NSData *received = [NSURLConnection sendSynchronousRequest:request returningResponse:nil error:nil];
+#define postRequestTongBu(argumentStr,urlStr,received)    NSURL*url=[[NSURL alloc]initWithString:urlStr]; NSMutableURLRequest *request = [[NSMutableURLRequest alloc]initWithURL:url cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:10];[request setHTTPMethod:@"POST"];NSData *data = [argumentStr dataUsingEncoding:NSUTF8StringEncoding];[request setHTTPBody:data];NSData *received = [NSURLConnection sendSynchronousRequest:request returningResponse:nil error:nil];
+
+
+
+#define postRequestAgency(datas)  -(void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response{datas=[[NSMutableData alloc]init];}-(void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data{[datas appendData:data];}-(void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error{NSLog(@"000000000");}
+//
+//UIAlertView*alertView=[[UIAlertView alloc]initWithTitle:@"提醒" message:@"加载失败" delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];[alertView show];
+#define postRequestAgencyAndRefesh(datas,refresh)  -(void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response{datas=[[NSMutableData alloc]init];}-(void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data{[datas appendData:data];}-(void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error{NSLog(@"000000000");  if (refresh.refreshing){NSDateFormatter *formatter=[[NSDateFormatter alloc] init];[formatter setDateFormat:@"MMM d,h:mm:ss a"];NSString *lastUp=[NSString stringWithFormat:@"上次更新时间：%@",[formatter stringFromDate:[NSDate date]]];refresh.attributedTitle=[[NSAttributedString alloc] initWithString:lastUp];[refresh endRefreshing];}}
+
+
+#define postRequestAgencyAndRefeshAndAlert(datas,refresh,remindAlert,navActivity)  -(void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response{datas=[[NSMutableData alloc]init];}-(void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data{[datas appendData:data];}-(void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error{NSLog(@"000000000");[navActivity stopAnimating];  if (refresh.refreshing){NSDateFormatter *formatter=[[NSDateFormatter alloc] init];[formatter setDateFormat:@"MMM d,h:mm:ss a"];NSString *lastUp=[NSString stringWithFormat:@"上次更新时间：%@",[formatter stringFromDate:[NSDate date]]];refresh.attributedTitle=[[NSAttributedString alloc] initWithString:lastUp];[refresh endRefreshing];}  [remindAlert dismissWithClickedButtonIndex:0 animated:YES];  }
+
+
+
+#define dicResultTongbu(received,result,dic) NSString *str2 = [[NSString alloc]initWithData:received encoding:NSUTF8StringEncoding];NSData*data2=[str2 dataUsingEncoding:NSUTF8StringEncoding];GDataXMLDocument *document=[[GDataXMLDocument alloc] initWithData:data2 options:0 error:nil];GDataXMLElement *e1=[document rootElement];NSString*result=[e1 stringValue];NSData* xmlData = [result dataUsingEncoding:NSUTF8StringEncoding];NSDictionary*dic=[[[NSString alloc]initWithData:xmlData encoding:NSUTF8StringEncoding]JSONValue];
+#define dicResultTongbuNoDic(received,result) NSString *str2 = [[NSString alloc]initWithData:received encoding:NSUTF8StringEncoding];NSData*data2=[str2 dataUsingEncoding:NSUTF8StringEncoding];GDataXMLDocument *document=[[GDataXMLDocument alloc] initWithData:data2 options:0 error:nil];GDataXMLElement *e1=[document rootElement];NSString*result=[e1 stringValue];
+
+
+#define dicResultYiBu(datas,result,dic)NSError*error=nil;GDataXMLDocument *document=[[GDataXMLDocument alloc] initWithData:datas options:0 error:&error];GDataXMLElement *e=[document rootElement]; NSString*result=[e stringValue];NSData* xmlData = [result dataUsingEncoding:NSUTF8StringEncoding];NSDictionary*dic;if (result.length>10) {dic=[[[NSString alloc]initWithData:xmlData encoding:NSUTF8StringEncoding]JSONValue];}
+
+
+#define dicResultYiBuNoDic(datas,result)NSError*error=nil;GDataXMLDocument *document=[[GDataXMLDocument alloc] initWithData:datas options:0 error:&error];GDataXMLElement *e=[document rootElement]; NSString*result=[e stringValue];
+
+
+#define  Head(htmlString1,str1)     NSString *htmlString1=[[NSString alloc] initWithFormat:@"<div class=\"detailHeadtitle\" id=\"pad\">%@</div>",str1];
+
+
+#define  Time(htmlString1,str1)     NSString *htmlString1=[[NSString alloc] initWithFormat:@"<div class=\"Time\" id=\"pad\">%@</div>",str1];
+
+#define  Pic(htmlString1,str1)     NSString *htmlString1=[[NSString alloc] initWithFormat:@"<div class=\"Time\" id=\"pad\">%@</div>",str1];
+
+
+#define  detailHeadtitle(htmlString1,str1)     NSString *htmlString1=[[NSString alloc] initWithFormat:@"<div class=\"detailHeadtitle\" id=\"pad\">%@</div>",str1];
+
+#define  detailtitle(htmlString1,str1)  NSString *htmlString1=[[NSString alloc] initWithFormat:@"<div class=\"detailtitle\" id=\"pad\">%@</div>",[WebView ArangeContent:str1]];
+
+#define  watchOutlintroduce(htmlString1,str1)  NSString *htmlString1=[[NSString alloc] initWithFormat:@"<div class=\"watchOutlintroduce\" id=\"pad\">%@</div>",[WebView ArangeContent:str1]];
+
+
+#define  Russian(htmlString1,str1)  NSString *htmlString1=[[NSString alloc] initWithFormat:@"<div class=\"Russian\" id=\"pad\">%@</div>",str1];
+
+#define  picStr(picStr,str)  NSString *picStr=[[NSString alloc] initWithFormat:@"<div class=\"pic\"><img id=\"image\" src=\"%@\"></div>",str];
+
+#define  address(htmlString1,str1)  NSString *htmlString1=[[NSString alloc] initWithFormat:@"<div class=\"address\" id=\"pad\">%@</div>",str1];
+
+#define  dividImage(picStr,str)  NSString *picStr=[[NSString alloc] initWithFormat:@"<div class=\"pic\"><img id=\"dividImage\" src=\"%@\"></div>",str];
+
+#define  lineImage1(picStr,str)  NSString *picStr=[[NSString alloc] initWithFormat:@"<div class=\"pic\"><img id=\"lineImage1\" src=\"%@\"></div>",str];
+
+#define  lineImage2(picStr,str)  NSString *picStr=[[NSString alloc] initWithFormat:@"<div class=\"pic\"><img id=\"lineImage2\" src=\"%@\"></div>",str];
+
+#define  lineImage3(picStr,str)  NSString *picStr=[[NSString alloc] initWithFormat:@"<div class=\"pic\"><img id=\"lineImage3\" src=\"%@\"></div>",str];
+
+
+#define  detailintroduce(htmlString1,str1)  NSString *htmlString1=[[NSString alloc] initWithFormat:@"<div class=\"detailintroduce\" id=\"pad\">%@</div>",[WebView ArangeContent:str1]];
+
+#define  headtitle(htmlString1,str1)  NSString *htmlString1=[[NSString alloc] initWithFormat:@"<div class=\"headtitle\" id=\"pad\">%@</div>",[WebView ArangeContent:str1]];
+
+#define ToolBar(textField)  UIToolbar*toolBar=[[UIToolbar alloc]initWithFrame:CGRectMake(0, 0, 320, 40)];toolBar.translucent=NO;UIBarButtonItem *barButton3=[[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:self action:nil];UIBarButtonItem *barButton2=[[UIBarButtonItem alloc]initWithTitle:@"完成" style: UIBarButtonItemStyleDone target:self action:@selector(dismissKey)];NSArray*toolArray=[[NSArray alloc]initWithObjects:barButton3, barButton2 ,nil];toolBar.items=toolArray;[textField setInputAccessoryView:toolBar];
+
+#define  dismissKey(text1,text2)  -(void)dismissKey{[text1 resignFirstResponder];[text2 resignFirstResponder];}
+#endif

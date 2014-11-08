@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>1</key>
+	<string>阿德默勒尔蒂区\海军部区&lt;br&gt;Адмиралтейский район</string>
+	<key>2</key>
+	<string>瓦西里岛区&lt;br&gt;Василеостровский район</string>
+	<key>3</key>
+	<string>维堡区&lt;br&gt;Выборгский район</string>
+	<key>4</key>
+	<string>加里宁格勒区&lt;br&gt;Калининский район</string>
+	<key>5</key>
+	<string>基洛夫区&lt;br&gt;Кировский район
+基洛夫区
+</string>
+	<key>6</key>
+	<string>彼得格勒区&lt;br&gt;Петроградский район</string>
+	<key>7</key>
+	<string>普希金区&lt;br&gt;Пушкинский район</string>
+	<key>8</key>
+	<string>中心区&lt;br&gt;Центральный район</string>
+	<key>9</key>
+	<string>喀琅施塔得区&lt;br&gt;Кронштадтский район</string>
+	<key>10</key>
+	<string>疗养区&lt;br&gt;Курортный район</string>
+	<key>11</key>
+	<string>莫斯科区&lt;br&gt;Московский район</string>
+	<key>12</key>
+	<string>涅瓦区&lt;br&gt;Невский район</string>
+	<key>13</key>
+	<string>柯林区&lt;br&gt;Колпинский район</string>
+	<key>14</key>
+	<string>彼得宫区&lt;br&gt;Петродворцовый район</string>
+	<key>15</key>
+	<string>海滨区&lt;br&gt;Приморский район</string>
+	<key>16</key>
+	<string>赤卫军区&lt;br&gt;Красногвардейский район</string>
+	<key>17</key>
+	<string>伏龙芝区&lt;br&gt;Фрунзенский район</string>
+	<key>18</key>
+	<string>红村区&lt;br&gt;Красносельский район</string>
+</dict>
+</plist>
