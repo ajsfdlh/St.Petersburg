@@ -37,6 +37,15 @@ backButton
     [sv addSubview:lab2];
    
     [sv setContentSize:CGSizeMake(320, lab2.frame.origin.y+lab2.frame.size.height+30)];
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
     
 }
 
