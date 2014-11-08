@@ -44,7 +44,6 @@ backButton
     hideTabbar
     tableArr = [NSMutableArray array];
     pageIndexOne=1;
-    NSLog(@"aaa");
     pageIndexTwo=1;
     payNames = @[@"微信支付",@"支付宝客户端支付",@"支付宝网页支付",@"手机银联支付",@"信用卡支付",@"当面支付"];
     //statuNames = @[@"待支付",@"待处理",@"预订成功",@"已失效",@"已完成",@"已取消",@"待入住",@"入住中",@"已点评"];
