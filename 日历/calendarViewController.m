@@ -419,7 +419,6 @@ backButton
                 str = [NSString stringWithFormat:@"%d-0%d-%d",self.aaC.year,self.aaC.month,sender.tag];
             }
         }
-
     }
     if (str != nil)
     {
